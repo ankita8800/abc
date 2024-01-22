@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practce</title>
+</head>
+<body>
+    <div class="container">
+    <div class="vegetabletotal">
+        <table>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Qty</th>
+        </table>
+        <p>Roti <span id="item1">10</span> <input type="number" id="quanty"></p>
+        <p>Dal <span id="item2">20</span> <input type="number" id="quanty2"></p>
+        <p>Mix veg <span id="item3">30</span> <input type="number" id="quanty3"></p>
+        <p>Rayeta <span id="item4">15</span> <input type="number" id="quanty4"></p>
+        <button id="total-amt">Total Bill</button> <input type="text" id="total">
+</div>
+</div>
+<script>
+   
+    document.getElementById("total-amt").addEventListener("click", function() {
+        let z= document.getElementById("item1").innerHTML;
+        let a= document.getElementById("item2").innerHTML;
+        let e= document.getElementById("item3").innerHTML;
+        let h= document.getElementById("item4").innerHTML;
+    let x = document.getElementById("quanty").value;
+    let b= document.getElementById("quanty2").value;
+    let f= document.getElementById("quanty3").value;
+    let i= document.getElementById("quanty4").value;
+        let y= z*x;
+        let c=a*b;
+        let g=e*f;  
+        let j=h*i;  
+        let d= y+c+g+j;
+     document.getElementById("total").value=d;  
+});
+
+</script>
+<style>
+    table th,p,span{padding: 20px;}
+
+</style>
+</body>
+</html>
